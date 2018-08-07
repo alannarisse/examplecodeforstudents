@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+</head>
+<body>
+
+  <main role="main">
+  <h1>Welcome to your quiz app helper</h1>
+
+<h2>Your project will need:</h2>
+
+<ul>
+  <li>Start screen with a start button</li>
+  <li>User is taken through a series of 10 questions with atleast 4 multiple choice answers Per. Should be asked one question after the other. Only be prompted with one question at a time.</li>
+  <li>User Can’t skip questions</li>
+  <li>Be able to see where they are (7 out of 10) and current score (5, correct, 2 incorrect)</li>
+  <li>After answer sumit, receive feedback (good job! Or here s the correct answer then move on to the next answer</li>
+  <li>Final page shows overall score 45/50 etc. Be prompted to start a new game</li>
+</ul>
+
+<p>View the <a href="https://gist.github.com/alfaraday/c54c3504b3bb14a879428e9939f6f430" target="_blank">UX/Responsiveness Checklist</a>
+<h2>Specs and Requirements:</h2>
+
+<ul>
+  <li>Use html forms</li>
+  <li>Use html, css and jquery</li>
+  <li>A11y -- keyboard usable</li>
+  <li>Responsive design (think about mobile, use media queries)</li>
+</ul>
+
+<h2>You’ll need:</h2>
+<ul>
+  <li>At least 3 sets of 5 questions typed up, any images you want to use</li>
+  <li>Design using pen and paper, them html wireframes</li>
+</ul>
+
+<h2>Code gathering</h2>
+<p>Put together a library of code snippets that will help you.
+  <ul>
+    <li><a href="https://api.jquery.com/submit/" target="_blank">JQuery for form submit</a></li>
+    <li>You'll probably want to make an object to store all of your questions and anwers, and correct answer as key:values</li>
+  </ul>
+
+  <h3>Example of object literal</h3>
+  <pre>
+    const myQuestions = [
+  {
+    question: "Who is the strongest?",
+    answers: {
+      a: "Superman",
+      b: "The Terminator",
+      c: "Waluigi, obviously"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "What is the best site ever created?",
+    answers: {
+      a: "SitePoint",
+      b: "Simple Steps Code",
+      c: "Trick question; they're both the best"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Where is Waldo really?",
+    answers: {
+      a: "Antarctica",
+      b: "Exploring the Pacific Ocean",
+      c: "Sitting in a tree",
+      d: "Minding his own business, so stop asking"
+    },
+    correctAnswer: "d"
+  }
+];
+
+  </pre>
+    <a href="https://www.sitepoint.com/simple-javascript-quiz/">from sitepoint sample js quiz app</a>
+
+<h2>We'll need these functions</h2>
+  <ul>
+    <li>A function for the start button</li>
+    <li>A function for the next page button</li>
+    <li>A counter for current/total questions</li>
+    <li>A counter for correct/incorrect answers</li>
+  </ul>
+
+
+
+
+
+  </main>
+</body>
+</html>
+
+
+

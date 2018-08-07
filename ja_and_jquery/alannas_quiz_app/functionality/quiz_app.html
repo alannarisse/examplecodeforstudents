@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cephalopod Quiz</title>
+  <meta name="description" content="A quiz about cephalopods">
+  <meta name+keywords" content="cephalopods, octopus, squid, molusks, nautilus, marine life, ocean, quiz, javascript class">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <!-- <script src="app.js"></script> -->
+
+</head>
+<body>
+
+
+<main role="main">
+  <header>
+    <h1>Cephalopod Quiz App</h1>
+  </header>
+  <section id="start-screen">
+    <p>The next ten questions are all about cephalopods</p>
+
+<!-- this button will take user to the quiz and also zero out the score. -->
+    <form method="get" action="questions.html">
+        <button type="submit">Let's get started</button>
+    </form>
+  </section>
+
+<!-- question html -->
+  <section id="start-screen">
+
+    <form method="get" action="checkanswer.html">
+      <fieldset>
+
+       <legend>
+        <h2><strong>Q.</strong> Cephalopods include the following animals:</h2></legend>
+
+      <div>
+        <input type="radio" name="question1" value="octopus, snails, lionfish, and squid" required/> octopus, snails, lionfish, and squid
+      </div>
+      <div>
+        <input type="radio" name="question1" value="octopus, squid, cuttlefish, and nautilus"/> octopus, squid, cuttlefish, and nautilus
+      </div>
+      <div>
+        <input type="radio" name="question1" value="octopos, cuttlefish, and squid"/> octopos, cuttlefish, and squid
+      </div>
+      <div>
+        <input type="radio" name="question1" value="ipod, peapods, and tripods"/> ipod, peapods, and tripods
+      </div>
+    <br/><br/>
+  <fieldset>
+<!-- this button will check for correct answer. if it's correct, display a "you are correct" and increment their score by 1. if not correct, tell them the right answer and not increment the score. -->
+        <button type="submit">Check question</button>
+
+    </form>
+  </section>
+</main>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Concepts
+
+The Dom: Document Object Model
+The Dom represents the current state of the page.. not html. When a page loads, the html is loaded into the dom and is then manipulated furter.
+
+Traversing: The dom is a hierarchical structure, we access elements of the DOM by traversing them.
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+
+Manipulation: finding an alement in the DOM and changing it's value or behavior.
+
+Script loading order: always load jquery first if you are using it's libraries in your own js file.
+
+
+Examples fo EVENT LISTENERS
+- Listening for when a user submits a form, then validating the data they submitted and displaying helpful error messages if they need to modify their entries
+- Listening for when a user types a search term into an input and displaying type-ahead text
+- Listening for when a user clicks an element on the page and launching an animation
+
+event.stopPropagation() makes sure if we click on a child element, that our javascript won't traverse back up the dom to it's parents.

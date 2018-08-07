@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Thinkful Tube</title>
+     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role='banner'>
+      <h1>YouTube Search API</h1>
+    </header>
+
+    <main role='mail' id='main'>
+      <form role='form'>
+        <fieldset>
+          <div align='center' role='search'>
+            <legend></legend>
+            <label for="query"></label>
+            <input type="text" name="query" class='js-query' placeholder="">
+            <button type="submit" id='submit'><i class="fas fa-search fa-lg"></i></button>
+          </div>
+        </fieldset>
+      </form>
+
+
+      <div class='js-search-results'>
+          <!-- RESULTS GO HERE -->
+      </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src='app.js'></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  </body>
+</html>

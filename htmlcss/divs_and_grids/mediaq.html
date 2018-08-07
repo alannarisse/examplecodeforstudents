@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Media Query Fun</title>
+
+	<style>
+		h1 { color: black; }
+		.my-box { 
+			border: 1px solid black; 
+			max-width: 100%;
+			margin: 40px auto;
+			padding: 40px;
+		}
+		button { 
+			background-color: purple;
+			color: white;
+			border-radius: 12px;
+			 }
+
+			 /* on desktop only */
+		@media screen and (min-width: 768px) {
+	  		h1 {
+	    		color: red;
+	    		display: inline;
+	    		float: left;
+		  		}
+		  	.my-box { 
+		  		max-width: 600px;
+		  		 }
+		  	.scoreboard div { 
+		  		width: 50%;
+		  		display: inline;
+		  	}
+		  	.scores {
+		  		width: 50%;
+		  	}
+		  	.scores span {float: right;}
+
+
+		}
+	</style>
+</head>
+<body>
+	<main role="main">
+		<div class="scoreboard">	
+			<div><h1>My logo</h1></div>
+			<div class="scores">
+				<span>Score: 0/10</span>
+				<span>Question: 4/10</span>
+			</div>
+		</div>
+		<br clear="all">
+
+		<div class="my-box">
+			<h1>My Header</h1>
+			<p>A paragraph of text</p>
+			<button>Submit</button>
+		</div>
+
+	</main>
+
+</body>
+</html>

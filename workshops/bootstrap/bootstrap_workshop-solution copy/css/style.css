@@ -1,0 +1,16 @@
+
+.jumbotron{
+    min-width:100%;
+    height:400px;
+    background: url(https://images.unsplash.com/photo-1437941792454-bacef7a7f736?q80&fmjpg&s9d54a5c69d3ae8ba1af0554649c24aa8) center;
+    background-size:cover;
+}
+header h1{
+
+    color:white;
+    text-shadow:2px 2px 3px rgba(0,0,0,.5)
+}
+form{padding:20px;background-color:wheat;}
+form input{width:200px;padding:10px;}
+footer{background-color: #E38181;}
+footer p{color:white;margin-bottom:0;padding-bottom:10px;}

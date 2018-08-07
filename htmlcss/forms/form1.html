@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form elements demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form class='demo-form' action="/some-server-endpoint" method ='post'>
+    <h1>But how do you really feel?</h1>
+    <fieldset name="contact-info">
+
+      <legend>Contact info</legend>
+      <label for="first-name">First name</label>
+      <input placeholder='Dweezil' type="text" name='first-name' id='first-name' />
+
+      <label for="last-name">Last name</label>
+      <input type="text" name='last-name' id='last-name' placeholder='Zappa' />
+
+      <label for="email">Email</label>
+      <input type="email" name='email' id='email' />
+
+      <label for="phone" required>Phone #</label>
+      <input type='tel' pattern='[0-9/-]*' name='phone' id='phone' placeholder="888-888-8888" title="A typical phone number" required/>
+    </fieldset>
+    <section>
+      <label class="question" for="feelings">How do you feel about it?</label>
+      <select name="feelings" id='feelings' required>
+        <option value="0">Great </option>
+        <option value="1" selected>Pretty great</option>
+        <option value="2">Definitely great</option>
+      </select>
+
+      <p class="question">How do you really feel, though?</p>
+      <input type="radio" name="feelings-2" id="ans-great-1" value="0" checked><label for="ans-great-1">Great</label>
+      <br>
+      <input type="radio" name="feelings-2" id="ans-great-2" value="1"><label for="ans-great-2">Seriously great</label>
+      <br>
+      <input type="radio" name="feelings-2" id="ans-great-3" value="2"><label for="ans-great-3">Not that not great.</label>
+
+      </section>
+      <button type='submit'>Submit</button>
+      <button type='reset'>Reset</button>
+    </form>
+  </body>
+</html>

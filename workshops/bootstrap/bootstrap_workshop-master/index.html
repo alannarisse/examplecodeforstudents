@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Bootstrap</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<header>
+<!--     <nav>
+        <a href="">Home</a>
+        <a href="">Away</a>
+        <a href="">My page</a>
+        <a href="">Contact</a>
+        <a href="">Login</a>
+    </nav> -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills">
+                <li><a href="">Home</a></li>
+                <li class="active"><a href="">Away</a></li>
+                <li class="text-nowrap"><a href="">My page</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="text-lowercase">learning bootstrap layouts</h1>
+    </div>
+</header>
+<section class="container">
+    <div class="row">
+        <article class="col-xs-12 col-md-4  order-md-2 col-lg-3 col-lg-offset-1">
+            <h2 class="text-justify">Check out this awesome block of text</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus distinctio dolor eum explicabo id ipsam itaque labore, laboriosam maiores modi nemo nostrum officia provident quia repudiandae suscipit tenetur voluptates.</p>
+        </article>
+        <article class="col-xs-12 col-md-4 order-md-1 col-lg-3 col-lg-offset-1">
+            <h2>Block 2 is just for you</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor id iste nesciunt odit, sapiente similique? A debitis deleniti deserunt dolore eos officia perspiciatis quibusdam? Consequatur labore mollitia qui repellat?</p>
+        </article>
+        <article class="col-xs-12 col-md-4 order-md-3 col-lg-3 col-lg-offset-1">
+            <h2>Block three is never free</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at cupiditate dolorem ea earum error explicabo labore quia saepe vero? Ab cupiditate debitis in laborum necessitatibus perferendis repudiandae similique unde?</p>
+        </article>
+    </div>
+</section>
+<form >
+    <label for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+    <button type="submit" class="btn btn-danger">Send invitation</button>
+</form>
+<footer class="container-fluid">
+    <nav class="col-xs-12 col-md-6 col-md-offset-3 container-fluid">
+        <a class="col-xs-3" href="">Home</a>
+        <a class="col-xs-3" href="">Away</a>
+        <a class="col-xs-3" href="">Contact</a>
+        <a class="col-xs-3" href="">Login</a>
+    </nav>
+    <p class="col-xs-12">Copyright 2015 Some company with cool copyright message</p>
+</footer>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+body {
+  background-color: navy;
+  padding-left: 30px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto', helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.demo-form fieldset {
+  padding-left: 0;
+  border: none;
+}
+
+.demo-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.demo-form input, .demo-form select {
+  display: block;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+/* Place radios and their labels
+on the same line */
+.demo-form input[type="radio"],
+.demo-form input[type="radio"]+label {
+  display: inline-block;
+  width: auto;
+}
+
+.demo-form input {
+  padding: 3px;
+}
+
+.demo-form input::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+  color: gray;
+}
+
+.demo-form input:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}
+
+.demo-form input::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+
+.demo-form input:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+
+.demo-form select {
+  cursor: pointer;
+}
+
+
+.demo-form input:invalid {
+  border: 2px red solid;
+}
+
+.demo-form button {
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}

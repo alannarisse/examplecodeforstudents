@@ -1,0 +1,64 @@
+body{margin:0;padding:0;}
+
+.jumbotron {
+    min-width:100%;
+    height:400px;
+    background: url(https://images.unsplash.com/photo-1437941792454-bacef7a7f736?q80&fmjpg&s9d54a5c69d3ae8ba1af0554649c24aa8) center;
+    background-size:cover;
+    background-position: 50% 80%;
+    position: relative;
+}
+
+.jumbotron h1 {
+    font-size: 42px;
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.nav-pills li.active a {
+    background-color: red;
+}
+
+.btn-danger {
+    background-color: aqua;
+    border: none;
+}
+.btn-danger:hover {
+    background-color: teal;
+}
+header nav{
+    width:100%;
+    text-align:center;
+    float:left;
+    background-color:slategray;
+    padding:10px;
+}
+header nav a{min-width:15%;color:white;text-decoration:none;text-shadow:1px 1px 3px rgba(0,0,0,.8);display:inline-block;vertical-align:top;}
+header img.masthead{
+    min-width:100%;
+    height:auto;
+    max-height:400px;
+}
+header h1{
+    color:white;
+    text-shadow:2px 2px 3px rgba(0,0,0,.5)
+}
+section{
+    text-align:center;
+    margin:20px;
+}
+section article{
+    vertical-align:top;
+    width:30%;
+    display:inline-block;
+}
+section article p{text-align:justify;padding:10px;box-sizing:border-box;}
+form{width:100%;text-align:center;padding:20px;background-color:wheat;}
+form input{width:200px;padding:10px;display;inline-block;}
+footer{background-color: #E38181;}
+footer nav{width:100%;text-align:center;}
+footer p{text-align:center;
+    color:white;
+    margin-bottom:0;padding-bottom:10px;}

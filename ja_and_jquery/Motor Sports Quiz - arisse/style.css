@@ -1,0 +1,80 @@
+/*
+.splashScreen{
+  display: inline;
+  text-align: center;
+}
+
+.questionContainer{
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.displayQuestion{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5%;
+  font-family: 'Raleway' , sans-serif;
+  border: 2px solid grey;
+  border-radius: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+
+} */
+body{
+  color: #ccc;
+  background-image : url('https://www.gtplanet.net/wp-content/uploads/2017/10/Gran-Turismo-Sport-Alfa-Romeo-4C-Gr3-02.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  position: 50px 50px;
+}
+header {
+  margin:0 20px;
+  color:#6C7A89;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.racingBG{
+
+
+}
+
+section .bg{
+
+}
+
+ul{
+list-style-type:none;
+}
+.questionBG{
+  background-color: #D64541;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  width: 50%;
+  margin: 80px auto;
+  text-align: center;
+  border-radius: 20px;
+}
+
+legend {
+  padding: 0 40px;
+}
+
+label{
+  text-align:left;
+}
+
+div .radios{
+  display: block !important;
+  text-align:left;
+  width:150px;
+  margin:0 auto;
+}
+fieldset {
+  width: auto;
+  margin: 0 auto;
+}
+
+.pageInserts{
+  display: block;
+}

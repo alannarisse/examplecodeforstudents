@@ -1,0 +1,48 @@
+/* style.css */
+
+*, body, p, li input{
+  font-family: verdana;
+  color: #fff;
+}
+
+p {font-size: 16px;}
+button {
+  background-color: #111e4b;
+  color:#fff;
+  padding:6px 8px;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Lalezar', cursive;
+  font-weight: normal;
+}
+body {
+  margin:80px;
+
+}
+
+form div {padding:0 0 20px 20px;}
+
+main {
+  background-image: url('img/octopus_drk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 60px;
+  height: 600px;
+  width: 900px;
+  padding:20px;
+  border-radius: 20px;
+}
+
+#score {width: 100%;}
+#score span {
+  display: inline-block;
+  width: 400px;
+}
+#score span.right {text-align: right;}
+
+#incorrectAnswer, #correctAnswer {
+  font-size:24px;
+  font-weight:bold;
+}
+#incorrectAnswer {  color: #ff9900; }
+#correctAnswer { color: green; }

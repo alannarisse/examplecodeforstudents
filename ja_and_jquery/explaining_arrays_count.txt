@@ -1,0 +1,25 @@
+here's our array
+
+myArray= [buttons, string, zippers]
+ there are a total of 3 items in my array
+ BUT the first item starts at index=0
+
+buttons         string        zippers
+ index=0        index=1       index=2
+
+
+
+ I'm on buttons, it has an index = 0 but it's my first item
+
+Question #1 = quest[0]
+Question#2 = guest[1]
+
+var question  stores the "real" id that starts at 1
+array quest sotes index values that start at 0
+
+
+
+const question = questionSet[questionNum - 1];
+
+questionNum is a variable of "real" ids that start with 1
+questionSet is the array and it starts at 0

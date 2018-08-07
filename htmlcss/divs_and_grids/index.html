@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My HTML CSS Fun Page</title>
+	<style>
+		* { box-sizing: border-box; }
+		.pink {background-color: pink;}
+		.aqua {background-color: aqua;}
+		.olive {background-color: olive;}
+
+		main { 
+			width: 800px;
+			margin: 20px auto;
+			border: 1px solid #333;
+			padding: 10px;
+			 }
+
+		.half { 
+			width: 50%;
+			float: left;
+			display: inline;
+			margin:0;
+			padding:0;
+			 }
+		.thirds { 
+			width: 33.3%;
+			float: left;
+			display: inline;
+			margin:0;
+			padding:0;
+			 }
+		.row::after { clear: both; }
+		a {
+			color: purple;
+			font-family: georgia;
+		}
+		a:hover { 
+			color: black; 
+			font-weight: bold; 
+			text-decoration: none;  
+		}
+	</style>
+</head>
+<body>
+
+
+<main role="main">
+	<div class="row">
+		<div class="pink half">
+			<p>This is my div</p>
+			<p><a href="#">link</a></p>
+		</div>
+		<div class="aqua half">
+			<p>This is my other div</p>
+		</div>
+	</div>
+<!-- some thirds -->
+	<div class="row">
+		<div class="aqua thirds">
+			<p>This is my other div</p>
+		</div>
+		<div class="olive thirds">
+			<p>This is my other div</p>
+		</div>
+		<div class="pink thirds">
+			<p>This is my other div</p>
+		</div>
+	</div>
+		<div class="aqua">
+			<p>This is my other div</p>
+		</div>
+		<p><img src="https://css-tricks.com/wp-content/uploads/2010/09/widthbox.png"></p>
+
+	<div class="full">
+		<h2>Block level elements</h2>
+		<ul>
+			<li>div default: <pre>{display: block}</pre></li>
+			<li>p</li>
+			<li>main</li>
+			<li>section</li>
+			<li>artciel</li>
+			<li>ordered and unordered lists (ul, ol)</li>
+		</ul>
+
+		<h2>Inline level elements</h2>
+		<ul>
+			<li>anchor tags:<br>
+				example: I went to the <a href="http://thezoo.com">zoo</a> today. </li>
+			<li>italics example: this is <em>important</em> stuff.</li>
+			<li>span</li>
+			<li>bold example: This is <strong>super</strong> important</li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

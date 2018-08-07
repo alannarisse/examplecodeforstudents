@@ -1,0 +1,12 @@
+.js-search-results {
+  display: flex;
+  margin: 15px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+
+.result {width: 300px;overflow:hidden;margin: 10px;}

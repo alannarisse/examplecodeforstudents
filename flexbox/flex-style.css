@@ -1,0 +1,105 @@
+body {	background-color:#333;
+}
+header, nav { color: #fff; }
+
+main {
+	margin: 50px auto;
+	max-width: 1200px;
+}
+
+section {
+	display: flex;
+	background-color:#fff;
+	padding: 20px;
+}
+
+article {
+	flex: 2; 
+	order: 2;
+	margin:10px;
+}
+
+aside{
+	flex: 1;
+	order: 1;
+}
+
+/* adding space between elements */
+.callouts-div { 
+	/* align-items: flex-start;  // makes divs be the height of their content, not the height of the row, aligned to top. */
+	/* align-items: flex-start; // same as above, but align bottom */
+	/* align-items: center; // same as above, but align center */
+	/* align-items: stretch; // this is the default */
+}
+
+@media (min-width:900px) {
+	.callouts-div {
+		display: flex; 
+		justify-content: space-between; /* can use flex-sart, flex-end, or center as well */
+	}
+}
+
+.callout { 
+	box-sizing: border-box;
+	padding: 20px;
+	margin-top: 36px;
+	flex-basis: 31%; /* same as width but more flexboxy */
+}
+.callout:nth-child(1) { background-color: #ccc; }
+.callout:nth-child(2) { background-color: #c0dbe2; }
+.callout:nth-child(3) { background-color: #cdf1c3; }
+
+/* wrapping columns to new lines on smaller screens automaticaal */
+.multicolrow {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.multicol {
+	margin-top: 20px;
+	width: 150px;
+	height: 100px;
+	background-color: aqua;
+}
+
+/* centering content horizontally and vertically */
+.banner {
+	display: flex;
+	max-width: 700px;
+	height: 400px;
+	margin: 40px auto;
+	background-color: #fff;
+}
+.center-me {
+	margin: auto;
+	font-size: 50px;
+}
+
+
+/* flexing columns and rows */
+
+.colrowmashup {
+	display: flex;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.first { 
+	flex: 1; 
+	padding: 20px;
+	background-color: #fff;
+}
+.second { 
+	flex: 1;
+	display: flex; 
+	flex-direction: column;
+}
+.second-a { 
+	background-color: #c0dbe2; 
+	flex: 1;
+}
+.second-b { 
+	flex: 1;
+	background-color: #cdf1c3; 
+}
+
+
