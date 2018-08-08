@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Switch demo</title>
+  <style>
+    body, p, h1, li, button {font-family: verdana;}
+
+  </style>
+</head>
+<body>
+
+<div style="width:800px;margin:40px auto;">
+
+
+    <p>Click the button to display what day it is today.</p>
+
+    <button onclick="dayPic()">What day is it?</button>
+
+    <p id="message"></p>
+
+    <script>
+
+
+    function dayPic() {
+      let x = "Every day is like Sunday";
+      let y = "seven";
+      let d = new Date().getDay();
+
+        switch (d) {
+          case 0:
+            x = "Today it's Sunday";
+            y = 'zero';
+          break;
+          case 1:
+            x = "Today it's Monday";
+            y = 'one';
+            break;
+          case 2:
+            x = "Today it's Tuesday";
+            y = 'two';
+            break;
+          case 3:
+            x = "Today it's Wednesday";
+            y = 'three';
+            break;
+          case 4:
+            x = "Today it's Thursday";
+            y = 'four';
+            break;
+          case 5:
+            x = "Today it's Friday";
+            y = 'five';
+            break;
+          case 6:
+            x = "Today it's Saturday";
+            y = 'six';
+            break;
+      }
+      document.getElementById("message").innerHTML = x;
+      document.getElementById(y).style.display = 'block';
+    }
+    </script>
+
+    <img src="switch_img/serval.jpg" id="zero" style="display:none;"/>
+    <img src="switch_img/meerkat.jpeg" id="one" style="display:none;"/>
+    <img src="switch_img/tarsier.jpg" id="two" style="display:none;"/>
+    <img src="switch_img/walrus.jpeg" id="three" style="display:none;"/>
+    <img src="switch_img/thomsonsgazelle.jpg" id="four" style="display:none;"/>
+    <img src="switch_img/ferret.jpg" id="five" style="display:none;"/>
+    <img src="switch_img/sloth.jpg" id="six" style="display:none;"/>
+    <img src="switch_img/skunk.png" id="seven" style="display:none;"/>
+</div>
+
+<div style="display:none;"> Hi there, THis is going to be hidden in a minute</div>
+
+</body>
+</html>

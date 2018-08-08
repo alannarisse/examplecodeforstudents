@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- <script src="arrays_fun.js"></script> -->
+
+</head>
+<body>
+
+
+<div>
+    <p id="message">Hello</p>
+    <button id="btn" type="button">Try it</button>
+    <hr>
+
+    <p id="passengerList">Our Passengers are</p>
+    <button id="btnPassengers" type="button">Show me</button>
+
+    <hr>
+
+
+    <script>
+        document.getElementById('btn').onclick = function() {
+            let x = "hey there";
+            document.getElementById('message').innerHTML = x;
+        }
+    </script>
+
+
+    <script>
+        document.getElementById('btnPassengers').onclick = function() {
+              const passengers = ["soupy sales", "mickey mouth", "sampson night", "frisco kidd", "aluminum balloominum"];
+                passengers.sort();
+
+              document.getElementById('passengerList').innerHTML = passengers.join(" -- ");
+              //document.getElementById('passengerList').innerHTML = passengers[0];
+        }
+    </script>
+
+
+</div>
+
+
+</body>
+</html>

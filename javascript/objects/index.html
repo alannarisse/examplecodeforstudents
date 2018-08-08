@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Objects</title>
+  <!-- <script src="arrays_fun.js"></script> -->
+
+</head>
+<body>
+
+
+<div style="margin:50px auto;">
+    <h1>About Objects</h1>
+
+
+    <p>Objects are a <em>complex data type</em> that let you keep a collection of properties and values in one place. They help you organize code that belongs together. Like in the quiz app, we can collect all of our questions and answers and organize them in one place in javascript.</p>
+
+    <p>Objects hold key/value pairs. The keys have to be unique but the values don't, and, they can be any data type.. numbers, strongs, booleans, null, etc.</p>
+
+
+    <p>When an object has a value that is a function, it's called a methond.</p>
+
+    <pre>
+      const mammal = {
+        numEyes: 2,
+        warmBlooded: true,
+        evolve: function() {
+          console.log("I'm not mutating, I'm evolving.");
+          mammal.numEyes++;
+        },
+      };
+
+      console.log(`mammal has ${mammal.numEyes} eyes`);
+      mammal.evolve();
+      console.log(`mammal now has ${mammal.numEyes} eyes`);
+
+  </pre>
+    <hr>
+<p>Getting values looks like this:</p>
+<pre>const ledZeppelin = {
+  singer: 'Robert Plant',
+  'guitar player': 'Jimmy Page',
+  bass: 'John Paul Jones',
+  drums: 'John Bonham'
+}
+
+console.log(ledZeppelin.singer);
+//or with bracket notation
+console.log(ledZeppelin['guitar player']);
+</pre>
+
+<h3>subtracting and adding</h3>
+<p>
+
+</p>
+<pre>
+  let totalQuestions = 10;
+  let currentQuestion = 1;
+
+  // we could have a for loop that updates currentQuestion
+  // with current value but for now we're just passing the value below.
+
+
+  const runningTotal = {
+    subtract: function(totalQuestions, currentQuestion) {
+    return totalQuestions-currentQuestion;
+  }
+};
+
+simpleCalculator.subtract(totalQuestions, 1); // => 9
+</pre>
+
+
+<h3>
+  Returning functions inside functions
+</h3>
+<pre>
+  function createMyObject() {
+  return {
+    foo: 'bar',
+    answerToUniverse: 42,
+    'olly olly': 'oxen free',
+    sayHello: function() {
+      return 'hello';
+    },
+  };
+</pre>
+
+<h3>Updating an exhisting object</h3>
+<p>note: for the quiz, think about updating an object when the user presses the next button.</p>
+<pre>
+  function updateObject(obj) {
+    obj.foo= 'foo',
+    obj.bar= 'bar',
+    obj.bizz= 'bizz',
+    obj.bang= 'bang'
+    return obj;
+}
+</pre>
+
+<p>This oject has a variable inside it (person) that has a function that returns a self referencial firstName plus lastName to fullName. 'return person' is then returning the value of the 'fullName' function inside person.</p>
+<pre>
+  function personMaker() {
+  var person = {
+    firstName: 'Paul',
+    lastName: 'Jones',
+    fullName: function() {
+      return this.firstName + ' ' + this.lastName;
+    },
+  };
+  return person;
+}
+</pre>
+
+</div>
+
+
+</body>
+</html>

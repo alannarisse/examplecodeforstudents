@@ -1,0 +1,15 @@
+At this point you should feel comfortable:
+
+Explaining what it means when we say that individual browsers implement the JavaScript specification
+Linking to external JavaScript files in your HTML
+Creating variables with let
+Creating constants with const
+Recognizing JavaScript's 6 data types when you see them in code you're reading. At this point, you don't need to understand each data type in depth, but you should at least know all 6 (or is it 7? :) ) names.
+Using the JavaScript console to execute, debug, and inspect code
+
+a function is a block of instructions that you can call in your code
+some functions take arguments (or parameters), which are values that the body of the function has access to
+
+some functions return a value, which means that they output a value that can be assigned to a variable
+
+

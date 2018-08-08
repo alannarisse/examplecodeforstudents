@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+
+p {font-size: 24px;}
+nav {
+	background-color: #ccc;
+	height: 80px;
+	padding: 80px;
+}
+
+nav::after { 
+	 }
+
+a { color: red; }
+a:hover { color: blue; }
+
+.initial-caps::first-letter  { font-size: 48px; }
+
+ul { float: left; }
+li { list-style-type: none; display: inline-block;}
+li::before {
+	content: ' |';
+	color: red;
+} 
+
+.logo-link {float: left;}
+section { background-color: #ddd; }
+</style>
+</head>
+<body>
+
+
+<h1>My Page</h1>
+<p class="initial-caps">This is the first line of my story</p>
+<nav>
+<a class="logo-link" href="#">My Link</a>
+
+<ul>
+	<li>My first item</li>
+	<li>My second item</li>
+</ul>
+</nav>
+
+<section>
+	<p>This is my section text</p>
+
+</section>
+
+</body>
+</html>
