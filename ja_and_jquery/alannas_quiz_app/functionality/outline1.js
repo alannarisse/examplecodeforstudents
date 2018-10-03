@@ -7,6 +7,10 @@ function startScreen(){
 
 }
 // question screen
+function questionScreen (){
+	// make sure the question number is incremented.
+
+}
 // feedback screen
 // finish screen
 
@@ -20,6 +24,7 @@ function startButton(){
 }
 // Check answer
 function checkAnswerButton(){
+	// compare my correctAnswer object with the selected radio button
 
 }
 // Continue the quiz
