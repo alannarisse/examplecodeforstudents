@@ -1,0 +1,9 @@
+makeSound({
+	weight: 23,
+	sound: 'woof',
+})
+
+function makeSound({species = 'dog', sound}){
+ console.log(`The ${species} says ${sound}`)
+	
+}

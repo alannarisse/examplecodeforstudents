@@ -1,0 +1,33 @@
+
+
+Class Car
+
+	wheels
+	frame
+	steering
+
+
+
+	Class Honda extends Car
+		wheels: continental
+		frame: steel
+		steering: power steering
+
+page.title : database.blabla
+
+
+React.Components {
+return(){
+	render{
+		<h1>page.title</h1>
+
+	}
+}
+}
+
+
+
+class Cow extends React.Components (){
+	prop: cowSound
+	cowSound.state('mooing')
+}
