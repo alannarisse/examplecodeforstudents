@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox fun</title>
+    
+    <style>
+        @media(min-width: 768px){
+            .container1, .container2, .container3 {display: flex;}
+        }
+            .container1 {
+            align-items: stretch; /*stretch is default*/
+            
+            }
+        .container2, .container3 {margin-top: 20px;}
+        .container1 div, .container2 div, .container3 div { border: 1px solid #333; padding: 10px;}
+        .container3 {flex-wrap: wrap;justify-content: space-between;}
+        .container2 {justify-content: space-between;}
+        /*.container2 {justify-content: space-between;} */     .container2 .box { flex-basis:25%;}
+        .container3 .box { flex-basis:12%;}
+        .box1 {flex:1;order:2;}
+        .box2 {flex:2;order:1;}
+        .box3 {flex:2;order:3;}
+    </style> 
+</head>
+<body>
+    <div class="container1">
+        <div class="box1">
+            <h3>Box 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box2">
+            <h3>Box 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box3">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+    </div>
+    
+     <div class="container2">
+        <div class="box">
+            <h3>Box 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+    </div>
+    
+    <div class="container3">
+        <div class="box">
+            <h3>Box 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+        <div class="box">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facere minus ad sunt aspernatur placeat error libero maxime deserunt commodi!</p>
+        </div>
+    </div>
+</body>
+</html>
