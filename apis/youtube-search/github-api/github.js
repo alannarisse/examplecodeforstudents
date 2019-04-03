@@ -6,9 +6,11 @@ function getDataFromApi(searchTerm, callback) {
     per_page: 5
   }
   $.getJSON(GITHUB_SEARCH_URL, query, callback);
+
 }
 
 function renderResult(result) {
+    console.log(result.name);
   return `
     <div>
       <h2>
